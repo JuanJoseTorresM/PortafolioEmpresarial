@@ -64,3 +64,30 @@ footer {
     padding: 1rem;
     background: #eee;
 }
+
+.skills-list {
+    padding-left: 20px; /* margen interno para viñetas */
+    margin: 0;
+    list-style-position: inside; /* viñetas dentro del ancho de la card */
+    word-wrap: break-word; /* permite cortar palabras largas */
+}
+
+.ig {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 8px;
+  transition: transform .2s ease;
+}
+
+.ig:hover {
+  transform: scale(1.1);
+}
+
+.sr-only {
+  position: absolute !important;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0,0,0,0);
+  border: 0;
+}
+
