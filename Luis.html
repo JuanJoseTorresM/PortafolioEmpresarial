@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hoja de Vida - Luis Miguel Cipagauta Pardo</title>
+  <link rel="stylesheet" href="Luis.css" />
+</head>
+<body>
+  <main class="cv">
+    <header class="cv__header" role="banner">
+      <div class="cv__profile">
+        <img src="https://media.licdn.com/dms/image/v2/D4D03AQGwIftQPF9sgA/profile-displayphoto-scale_400_400/B4DZgLiVURGgAg-/0/1752540207014?e=1758758400&v=beta&t=VvSThYTeoqa4RxekvNYQy0igU3yv5kiQJukX5NaZaUY" alt="Foto de perfil de Luis Miguel Cipagauta Pardo" class="cv__profile-photo" />
+        <div>
+          <h1 class="cv__name">Luis Miguel <span>Cipagauta Pardo</span></h1>
+          <ul class="cv__contact" aria-label="Información de contacto">
+            <li><a href="tel:+573166008863">+57 316 600 8863</a></li>
+            <li><a href="mailto:cipagautaluis2805@gmail.com">cipagautaluis2805@gmail.com</a></li>
+            <li>Tunja, Boyacá, Colombia</li>
+            <li><a href="https://www.linkedin.com/in/luis-miguel-cipagauta-pardo-71aa39331/" target="_blank" rel="noreferrer noopener">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <section class="cv__about" aria-labelledby="sobre-mi">
+      <h2 id="sobre-mi">Sobre mí</h2>
+      <p>
+        Actualmente curso octavo semestre del programa de Ingeniería de Sistemas en la Universidad Santo Tomás, Seccional Tunja.
+        Me destaco por mi compromiso con la formación académica y el desarrollo integral, participando activamente en actividades
+        extracurriculares y espacios de actualización profesional. Cuento con certificaciones en inglés nivel B2 y actualmente me
+        encuentro en formación para alcanzar el nivel C1, lo cual potencia mis competencias comunicativas en entornos bilingües.
+        Me caracterizo por mi responsabilidad, habilidades para el trabajo en equipo, liderazgo y orientación a la mejora continua,
+        con interés en proyectarme profesionalmente tanto nacionalmente como en el exterior.
+      </p>
+    </section>
+
+    <div class="cv__grid">
+      <aside class="cv__sidebar" aria-label="Lateral">
+        <section class="card" aria-labelledby="habilidades">
+          <h3 id="habilidades">Habilidades</h3>
+          <ul class="pill-list">
+            <li>Idioma Extranjero (Inglés B2 → C1)</li>
+            <li>Machine Learning</li>
+            <li>Gestión de Proyectos</li>
+            <li>Manejo de Bases de Datos</li>
+            <li>Node.js</li>
+            <li>Angular</li>
+          </ul>
+        </section>
+
+        <section class="card" aria-labelledby="cursos">
+          <h3 id="cursos">Curso / Evento</h3>
+          <ul class="timeline">
+            <li>
+              <div class="timeline__content">
+                <strong>Congreso Internacional CI3S Colombia</strong>
+                <div>Universidad Santo Tomás - Seccional Tunja</div>
+                <time datetime="2024-09">Sep. 2024</time>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </aside>
+
+      <section class="cv__main">
+        <section class="card" aria-labelledby="experiencia">
+          <h3 id="experiencia">Experiencia laboral</h3>
+
+          <article class="item">
+            <header class="item__header">
+              <h4 class="item__title">Asesor de Ventas</h4>
+              <div class="item__meta">
+                <span class="item__org">International Nutrition Col</span>
+                <span class="item__loc">Tunja</span>
+                <time class="item__time" datetime="2023">2023 — Actualidad</time>
+              </div>
+            </header>
+            <ul class="item__bullets">
+              <li>Gestión de ventas al detal y mayoristas en suplementos deportivos.</li>
+              <li>Asesoramiento personalizado en nutrición deportiva.</li>
+            </ul>
+          </article>
+
+          <article class="item">
+            <header class="item__header">
+              <h4 class="item__title">Logística de Eventos</h4>
+              <div class="item__meta">
+                <span class="item__org">Estadio La Independencia Tunja</span>
+                <span class="item__loc">Tunja</span>
+                <time class="item__time" datetime="2023-11">Nov. 2023 — Ene. 2024</time>
+              </div>
+            </header>
+            <ul class="item__bullets">
+              <li>Gestión logística en eventos del Estadio La Independencia.</li>
+              <li>Manejo eficiente de grandes audiencias.</li>
+              <li>Excelencia en atención al cliente.</li>
+            </ul>
+          </article>
+        </section>
+
+        <section class="card" aria-labelledby="educacion">
+          <h3 id="educacion">Educación</h3>
+
+          <article class="item">
+            <header class="item__header">
+              <h4 class="item__title">Bachiller Académico con Técnico en Sistemas</h4>
+              <div class="item__meta">
+                <span class="item__org">Colegio Comfaboy</span>
+                <span class="item__loc">Tunja, Boyacá</span>
+                <time class="item__time" datetime="2021">2021</time>
+              </div>
+            </header>
+          </article>
+
+          <article class="item">
+            <header class="item__header">
+              <h4 class="item__title">Ingeniería de Sistemas (8.º semestre)</h4>
+              <div class="item__meta">
+                <span class="item__org">Universidad Santo Tomás - Seccional Tunja</span>
+                <span class="item__loc">Tunja, Boyacá</span>
+              </div>
+            </header>
+            <p class="item__summary">
+              Enfoque en Frameworks Modernos para Web, Machine Learning y Metodologías Ágiles de Trabajo.
+            </p>
+          </article>
+        </section>
+      </section>
+    </div>
+
+    <footer class="cv__footer" role="contentinfo">
+      <small>Hoja de vida generada en HTML + CSS. © <span id="year"></span> Luis Miguel Cipagauta Pardo</small>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
